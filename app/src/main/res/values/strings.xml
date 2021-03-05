@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Neverlost</string>
+    <string name="back">BACK</string>
+    <string name="item_name">Item Name</string>
+    <string name="location_name">Location Name</string>
+    <string name="description_optional">Description (Optional)</string>
+    <string name="save">SAVE</string>
+    <string name="empty">EMPTY</string>
+    <string name="search">Search</string>
+    <string name="my_stuff">My Stuff</string>
+    <string name="add_title">Add item</string>
+    <string name="title_activity_loading_screen">LoadingScreen</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

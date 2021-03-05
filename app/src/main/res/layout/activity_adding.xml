@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#D5C6C3C3"
+    android:foregroundTint="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/add_title"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp"
+        android:background="#EBEDED"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="105dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#99474646"
+        android:text="@string/back"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SaveBtn" />
+
+    <TextView
+        android:id="@+id/ItemNameText"
+        android:layout_width="142dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/item_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ItemLocationText"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/location_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ItemNameText"
+        app:layout_constraintTop_toBottomOf="@+id/NameField" />
+
+    <TextView
+        android:id="@+id/ItemDescriptionText"
+        android:layout_width="253dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="82dp"
+        android:text="@string/description_optional"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ItemLocationText"
+        app:layout_constraintTop_toBottomOf="@+id/LocationField" />
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="210dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#97E41E"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/backBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/DescriptionField"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:background="#FDFDFD"
+        android:backgroundTint="#FAFAFA"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minWidth="320dp"
+        android:minHeight="168dp"
+        app:layout_constraintBottom_toTopOf="@+id/SaveBtn"
+        app:layout_constraintEnd_toEndOf="@+id/locimagebtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ItemDescriptionText"
+        app:layout_constraintTop_toBottomOf="@+id/ItemDescriptionText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/NameField"
+        android:layout_width="228dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/itempicbtn"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="@+id/ItemNameText"
+        app:layout_constraintTop_toBottomOf="@+id/ItemNameText" />
+
+    <EditText
+        android:id="@+id/LocationField"
+        android:layout_width="228dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/locimagebtn"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="@+id/ItemLocationText"
+        app:layout_constraintTop_toBottomOf="@+id/ItemLocationText" />
+
+    <ImageButton
+        android:id="@+id/itempicbtn"
+        android:layout_width="96dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:background="#55FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/NameField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:srcCompat="@drawable/no_pic_img" />
+
+    <ImageButton
+        android:id="@+id/locimagebtn"
+        android:layout_width="96dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:background="#55FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/LocationField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itempicbtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/no_pic_img2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
